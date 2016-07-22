@@ -1,0 +1,38 @@
+{
+  "name": "zheng_app",
+  "author": "zhengxiaoyao0716",
+  "version": "0.1.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "ZhengApp",
+    "uuid": "cf332f57-829a-4516-9d79-fd8e298b880b",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "MY_LOGO",
+          "file": "image/logo.png",
+          "memoryFormat": "Smallest",
+          "spaceOptimization": "memory"
+        }
+      ]
+    }
+  }
+}
