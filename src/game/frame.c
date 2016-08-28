@@ -2,17 +2,20 @@
 
 #include "game.h"
 
-static int timeAxis = 0;
+static int timeAxis = -3;
 static void refresh(struct tm *tick_time, TimeUnits units_changed) {
     timeAxis++;
-    if (timeAxis % 3 == 0) {
+    if (timeAxis > 0) {
+        gameLoop.update(timeAxis);
+    } else if (timeAxis == 0) {
         gameLoop.start();
     
         gbitmap_destroy(bitmap);
         layer_remove_from_parent((Layer *)bitmapLayer);
         bitmap_layer_destroy(bitmapLayer);
+        bitmap = NULL;
+        bitmapLayer = NULL;
     }
-    APP_LOG(APP_LOG_LEVEL_DEBUG, "Time ticked: %d", timeAxis);
 }
 
 Frame frame = {

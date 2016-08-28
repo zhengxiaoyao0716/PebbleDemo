@@ -31,6 +31,11 @@
           "file": "image/logo.png",
           "memoryFormat": "Smallest",
           "spaceOptimization": "memory"
+        },
+        {
+          "type": "font",
+          "name": "MONACO_12",
+          "file": "font/MONACO.TTF"
         }
       ]
     }

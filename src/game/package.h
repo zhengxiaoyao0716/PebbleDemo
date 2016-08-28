@@ -10,4 +10,6 @@ extern GBitmap* bitmap;
 extern BitmapLayer* bitmapLayer;
 extern TextLayer* textLayer;
 
+extern GFont font;
+
 #endif

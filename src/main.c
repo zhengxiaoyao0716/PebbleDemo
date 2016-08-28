@@ -7,6 +7,7 @@
 
 Window* mainWindow;
 GRect bounds;
+
 GBitmap *bitmap;
 BitmapLayer* bitmapLayer;
 

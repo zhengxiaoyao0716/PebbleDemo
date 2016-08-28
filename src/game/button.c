@@ -1,16 +1,19 @@
 #include "button.h"
 
+#include "board.h"
+
+
 static void onUpClick(ClickRecognizerRef recognizer, void *context) {
-    APP_LOG(APP_LOG_LEVEL_DEBUG, "Up button clicked");
+    board.trigger('2');
 }
 static void onDownClick(ClickRecognizerRef recognizer, void *context) {
-    APP_LOG(APP_LOG_LEVEL_DEBUG, "Down button clicked");
+    board.trigger('8');
 }
 static void onBackClick(ClickRecognizerRef recognizer, void *context) {
-    APP_LOG(APP_LOG_LEVEL_DEBUG, "Back button clicked");
+    board.trigger('4');
 }
 static void onSelectClick(ClickRecognizerRef recognizer, void *context) {
-    APP_LOG(APP_LOG_LEVEL_DEBUG, "Select button clicked");
+    board.trigger('6');
 }
 
 OnClick onClick = {
